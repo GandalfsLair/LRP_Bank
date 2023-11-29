@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-US" class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Transfer Funds | Felicity Bank Inc.</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/images/icon/dogecoin.png"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="refresh" content="600;URL=inactivity.html">
+    <link rel="stylesheet" href="assets/css/account.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+        /* Style to display form elements in a two-column layout */
+        form {
+            display: flex;
+            max-width: 500px; /* Adjust the maximum width as needed */
+            margin: auto; /* Center the form on the page */
+        }
+
+        .column {
+            flex: 1; /* Each column takes equal width */
+            margin-right: 20px; /* Adjust the gap between columns */
+        }
+
+        label {
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%; /* Make form elements take full width */
+            padding: 8px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            padding: 10px 10px; /* Adjust the padding to make it smaller */
+        }
+
+    </style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Attach an event listener to the form
+        document.getElementById("discardForm").addEventListener("submit", function(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Redirect the user to another webpage
+            window.location.href = "verify.html";
+        });
+    });
+</script>
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <nav
+      class="navbar navbar-expand-sm navbar-light bg-light border"
+      style="height: 8vh; width: 100%;"
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand">Felicity Bank Inc.</a>
+
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-link">
+              <a href="#">Business</a>
+            </li>
+            <li class="nav-link">
+              <a href="invest.html">Investing</a>
+            </li>
+            <li class="nav-link">
+              <a
+                href="https://en.wikipedia.org/wiki/Technical_support_scam"
+                target="_blank"
+                >Report Fraud</a
+              >
+            </li>
+            <li class="nav-link">
+              <a href="contact.html">Contact</a>
+            </li>
+            <li class="nav-link">
+              <a href="logout.html">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- end of navbar -->
+
+    <div style="height: 3vh;"></div>
+
+    <!-- end of space, main content: -->
+    <div class="container">
+      <div class="page-header">
+
+
+
+        <!-- end of alerts/messages at the top -->
+
+        <div class="row">
+          <div class="col-sm-8">
+                      
+            <div>
+                <h3>Make a Transfer</h3>
+
+                </form>
+                    <div class="column">
+                        <h4>Your Account</h4>
+                        <label for="accountName">Account Name:</label>
+                        <input type="text" id="accountName" name="accountName" required>
+            
+                        <label for="accountNumber">Account Number:</label>
+                        <input type="text" id="accountNumber" name="accountNumber" required>
+            
+                        <label for="amount">Amount:</label>
+                        <input type="text" id="text" name="amount" required>
+                    </div>
+            
+                    <div class="column">
+                        <h4>Payee Account</h4>
+                        <label for="payeeAccountName">Account Name:</label>
+                        <input type="text" id="payeeAccountName" name="payeeAccountName" required>
+            
+                        <label for="payeeAccountNumber">Account Number:</label>
+                        <input type="text" id="payeeAccountNumber" name="payeeAccountNumber" required>
+            
+                        <label for="payeeSortCode">Sort Code:</label>
+                        <input type="text" id="payeeSortCode" name="payeeSortCode" required>
+                    </div>
+               
+            </div>
+            <div>
+                <form id="discardForm" method="post">
+                    <input type="submit" value="Submit">
+            </form>
+            </div>
+
+    
+
+
+          </div>
+          <div class="col-sm-4">
+            <h3>Accounts</h3>
+            <hr />
+            <!-- start of table -->
+            <table class="table table-striped border">
+              <thead>
+                <tr>
+                  <th>Account Type</th>
+                  <th>Account Number</th>
+                  <th>Current Balance</th>
+                  <th>Available Balance</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>Personal Checking</td>
+                <td>****1337</td>
+                <td>$2,293.01</td>
+                <td>$2,293.01</td>
+              </tr>
+              <tr>
+                <td>Online Savings</td>
+                <td>****1930</td>
+                <td>$15,011.34</td>
+                <td>$15,011.34</td>
+              </tr>
+              <tr>
+                <td>Platinum AARP Credit Card</td>
+                <td>****4242</td>
+                <td>$420.69</td>
+                <td>$3,580.00</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="height: 8vh;"></div>
+
+    <!-- scripts and such; end of regular stuff -->
+    <script src="assets/js/account.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
